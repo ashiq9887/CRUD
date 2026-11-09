@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Management</h2>
+        <p class="subtitle">Add and manage your contacts</p>
+        <!-- Contact Form -->
+        <div class="form-container">
+            <h3>Add Contact</h3>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Enter Name" required>
+                <input type="tel" id="phone" placeholder="Enter Phone Number"
+                    pattern="[0-9]{10}" title="Enter a 10-digit phone number" required>
+                <input type="email" id="email" placeholder="Enter Email Address" required>
+                <button type="submit" id="submitBtn">Add Contact</button>
+            </form>
+        </div>
+        <!-- Search Contact -->
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search contact by name...">
+        </div>
+        <!-- Contact Table -->
+        <div class="table-container">
+            <h3>Contact List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sl.No</th>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Email Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="contactList">
+                </tbody>
+            </table>
+        </div>
+</div>
+    <script src="main.js"></script>
+
+</body>
+</html>
